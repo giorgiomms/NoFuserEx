@@ -30,7 +30,7 @@ jobs:
     - name: Build solution
       run: msbuild NoFuserEx/NoFuserEx.sln -t:rebuild -property:Configuration=Release -property:AllowUnsafeBlocks=True
 
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: NoFuserEx
         path: NoFuserEx
